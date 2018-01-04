@@ -3,7 +3,9 @@ I like reading papers about statistical and methodological innovations for (cogn
 
 ## Wishlish
 Concepts/papers/methods I want to check out in the future:
-- 
+
+- Pattern component modelling from [Diedrichsen et al. (2011)](http://www.sciencedirect.com/science/article/pii/S1053811911000796).
+- Modelling correlated noise in decoding analyses by [van Bergen & Jehee (2017)](https://www.sciencedirect.com/science/article/pii/S1053811917306626).
 
 ## Contents
 This repo contains notebooks on the following concepts/methods:
@@ -27,3 +29,19 @@ Simple notebook with some snippets that implement polynomial regression for the 
 - `prevalence_inference.ipynb`
 
 I'm pretty proud of this notebook! It contains a fully annotated implementation of "prevalence inference" as described in the paper by [Allefeld, Gorgen, & Haynes (2016)](http://www.sciencedirect.com/science/article/pii/S1053811916303470) and the notebook additionally contains a complete replication of the results (and plots) from the original article. Note that I implemented this method in my own [skbold](https://github.com/lukassnoek/skbold) package in a [separate module](https://github.com/lukassnoek/skbold/blob/master/skbold/postproc/prevalence.py).  
+
+- `prewhitening.ipynb`
+
+A notebook with a simple implementation of prewhitening because I was interested in the "multivariate noise normalization" described in the paper by [Walther et al. (2016)](http://www.sciencedirect.com/science/article/pii/S1053811915011258). I aim to extend this to show prewhitening on actual fMRI data and in the context of RSA.
+
+- `simulation_variance_OLS_parameters.ipynb`
+
+I used this notebook to gain a better intuition what "variance" of statistical parameters actually means. 
+
+- `convert_ovo_to_ovr.ipynb`
+
+For multiclass classification, scikit-learn provides implementations for both "one-versus-one" ("ovo") and "one-versus-rest" ("ovr") classification schemes. This choice affects the structure of the coefficient matrix after fitting (i.e., which column corresponds to which pairwise classification?). I used this notebook to see how I should convert these "ovo" coefficients to the structure of "ovr" coefficients (for the purpose of implementing 'inverting backwards coefficients' from the Haufe et al. paper in my [skbold](https://github.com/lukassnoek/skbold) package).
+
+- `time_domain_decoding.ipynb`
+
+This (draft!) notebook implements the "decoding in the time domain" method by [Loula, Varoquaux, & Thirion (2017)](https://www.sciencedirect.com/science/article/pii/S1053811917306651).
