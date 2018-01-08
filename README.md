@@ -4,7 +4,6 @@ I like reading papers about statistical and methodological innovations for (cogn
 ## Wishlish
 Concepts/papers/methods I want to check out in the future:
 
-- Improving predictive models using non-spherical Gaussian priors from [Nunez-Elizalde, Huth, & Gallant (2017)](https://www2.securecms.com/CCNeuro/docs-0/5928d71e68ed3f844e8a256f.pdf)
 - Pattern component modelling from [Diedrichsen et al. (2011)](http://www.sciencedirect.com/science/article/pii/S1053811911000796).
 - Modelling correlated noise in decoding analyses by [van Bergen & Jehee (2017)](https://www.sciencedirect.com/science/article/pii/S1053811917306626).
 
@@ -38,6 +37,10 @@ A notebook with a simple implementation of prewhitening because I was interested
 - `simulation_variance_OLS_parameters.ipynb`
 
 I used this notebook to gain a better intuition what "variance" of statistical parameters actually means. 
+
+- `tikhonov_regression_with_non_sphrerical_prior.ipynb`
+
+I came across this interesting abstract titled "Improving predictive models using non-spherical Gaussian priors" from [Nunez-Elizalde, Huth, & Gallant (2017)](https://www2.securecms.com/CCNeuro/docs-0/5928d71e68ed3f844e8a256f.pdf), which uses a more general form of Ridge regression - called Tikhonov regression - in which you specify a prior on the distribution model's parameters. I tried to implement Tikhonov regression in this notebook, which seems to demonstrate that *if you have a reasonable estimate of the distribution (mean & variance) of the parameters*, your predictions get **much** better. 
 
 - `convert_ovo_to_ovr.ipynb`
 
