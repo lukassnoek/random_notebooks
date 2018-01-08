@@ -4,6 +4,7 @@ I like reading papers about statistical and methodological innovations for (cogn
 ## Wishlish
 Concepts/papers/methods I want to check out in the future:
 
+- Improving predictive models using non-spherical Gaussian priors from [Nunez-Elizalde, Huth, & Gallant (2017)](https://www2.securecms.com/CCNeuro/docs-0/5928d71e68ed3f844e8a256f.pdf)
 - Pattern component modelling from [Diedrichsen et al. (2011)](http://www.sciencedirect.com/science/article/pii/S1053811911000796).
 - Modelling correlated noise in decoding analyses by [van Bergen & Jehee (2017)](https://www.sciencedirect.com/science/article/pii/S1053811917306626).
 
