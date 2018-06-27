@@ -49,3 +49,7 @@ For multiclass classification, scikit-learn provides implementations for both "o
 - `time_domain_decoding.ipynb`
 
 This (draft!) notebook implements the "decoding in the time domain" method by [Loula, Varoquaux, & Thirion (2017)](https://www.sciencedirect.com/science/article/pii/S1053811917306651).
+
+- `linear_distriminant_contrast.ipynb`
+
+After attending the RSA-workshop in Cambridge, I wanted to know how the "linear distriminant contrast" metric "worked" exactly and how to implement it, which is convered in the notebook (along with a quite extensive elaboration on how to generate relatively realistic fMRI data).
